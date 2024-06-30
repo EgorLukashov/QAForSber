@@ -26,5 +26,11 @@ namespace QAForSber.Models
         //[Required(ErrorMessage = "Email обязателен")]
         //[EmailAddress(ErrorMessage = "Неверный формат Email")]
         public string AdminEmail { get; set; }
+
+        public class KafkaMessage<T>
+        {
+            public string Operation { get; set; }
+            public T Data { get; set; }
+        }
     }
 }
