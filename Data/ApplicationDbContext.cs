@@ -9,11 +9,10 @@ namespace QAForSber.Data
         {
             
         }
-        //public DbSet<Flowers> flowers_available { get; set; }
         public DbSet<Admin> Admin { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Указываем, что свойство IDPark является первичным ключом
+            //Specify that IdAdmin is id (Primary Key)
             modelBuilder.Entity<Admin>().HasKey(p => p.IDAdmin);
         }
     }

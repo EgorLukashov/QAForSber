@@ -2,14 +2,14 @@
 using QAForSber.Models;
 using Microsoft.AspNetCore.Mvc;
 using Confluent.Kafka;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using System;
 using static QAForSber.Models.Admin;
+//using System.Threading.Tasks;
+//using System.Collections.Generic;
+//using Microsoft.Extensions.Configuration;
+//using System;
+//using Microsoft.Extensions.Logging;
 
 namespace QAForSber.Controllers
 {
